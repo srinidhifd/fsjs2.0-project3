@@ -1,0 +1,208 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+body{
+    overflow: hidden;
+   font-family: "Orbitron"; 
+}
+
+/* =================================== */
+/*              Navbar                 */
+/* =================================== */
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding: 20px 20px 5px 20px ;
+}
+.navbar-container img{
+    width: 110px;
+margin: 0px 50px 0px 100px ;
+}
+.navbar-container ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 90px;
+    justify-content: center;
+}
+.navbar-container ul li{
+    margin-left: 60px ;
+    font-weight: 700px;
+    font-size: 1.1em;
+}
+.navbar-container ul li:first-child{
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    font-size: 1.3em;
+    padding-bottom: 7px;
+}
+.navbar-container .button-group{
+    display: flex;
+    align-items: center;
+    margin-left: 13em ;
+}
+.navbar-container .nav-button,.button-email{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 5px 35px ;
+    color: gray;
+    font-size: 1em;
+}
+.navbar-container .search-icon svg {
+    margin-right: 15px ;
+    margin-top: 7px;
+    width: 20px;
+}
+
+
+/* ===================================== */
+/*        Hero banner section            */
+/* ===================================== */
+
+.hero-container{
+display: flex;
+}
+.hero-container .square{
+position: relative;
+width: 50%;
+top: 190px;
+z-index: -1;
+left: 170px;
+}
+.hero-container .square img{
+    display: inline-block;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+.hero-container .star{
+position: relative;
+top: 520px;
+left: 100px;
+}
+.hero-container .star img{
+    display: inline-block;
+    width: 40px;
+}
+
+.hero-container .square+span{
+position: relative;
+top: 70px;
+left: 54%;
+}
+.hero-container .square+span img{
+    display: inline-block;
+    width: 50px;
+}
+.hero-container .globe{
+position: relative;
+top: 40px;
+left: 12%;
+}
+.hero-container .globe img{
+    width: 50px;
+    display: inline-block;
+}
+
+.hero-container div img{
+position: absolute;
+top: 170px;
+left: 100px;
+width: 25%;
+}
+.hero-container .hero-container-right{
+margin-top: 10% ;
+width: 90%;
+}
+.hero-container .hero-container-right .hero-heading{
+font-weight: 600;
+font-size: 3.5em;
+margin-bottom: 50px;
+}
+.hero-container .hero-container-right .hero-description{
+color: gray;
+font-size: 0.9em;
+margin-left:40px ;
+width: 75%;
+text-align: center;
+font-family: "Poppins";
+}
+
+.hero-container .button-email{
+padding: 3px 20px;
+font-size: 1.1em;
+}
+.hero-container .hero-description+div{
+    margin: 100px 220px 50px;
+}
+.hero-container .button-join{
+background-color: #000000;
+color: #ffffff;
+padding: 1px 10px;
+border-radius: 7px;
+font-weight: 500;
+font-size: 1.1em;
+}
+.hero-container h4{
+    margin-left: 35%;
+    color: gray;
+    margin-bottom: 10px;
+}
+.hero-container .hero-container-right .icons{
+position: relative;
+left: 240px;
+}
+.hero-container .icons span img{
+    position: static;
+    width: 30px;
+    margin: 10px 20px 0px 10px;
+}
+
+/* ============================================= */
+/*       Mobile Responsive Media queries         */
+/* ============================================= */
+
+@media (max-width:600px){
+    .navbar-container{
+        padding: 0px 10px;
+    }
+    .navbar-container ul{
+        display: none;
+    }
+    .navbar-container > div img{
+        margin: 0px;    
+    }
+    .navbar-container .button-group{
+        margin-left: 50px;
+    }
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-container > div{
+        margin: 0px;
+        padding: 0px;
+    }
+    .hero-container > div img{
+        position: absolute;
+        width:150px;
+
+    }
+    .hero-container .square{       
+        position: relative;
+        top: 60px;
+        left: 60px;
+        z-index: -1;
+        }
+        .hero-container .square img{
+            width: 150px;
+        }
+}
