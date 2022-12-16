@@ -9,3 +9,8 @@
 _Live Website_ : [Link](https://fashion-huby.netlify.app/)
 
 ### This webpage is  not Completely Responsive as of now .
+## **Expected Output:**
+![FASHION HUB](./output.png)
+
+## **Achieved Output:**
+![FASHION HUB](./FASHION-HUB.png)
